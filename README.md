@@ -66,3 +66,17 @@ O sistema mostra:
 - Número de eventos ativos
 - Fator médio de balanceamento
 - Total de rotações realizadas
+
+## Testes
+
+As capturas dos testes podem ser colocadas em uma pasta chamada imagens e referenciadas no README.
+
+Exemplo:
+
+![Teste de consulta](imagens/Cadastro_print.png)
+
+![Teste de cadastro](imagens/Buscar_print.png)
+
+![Teste de metricas](imagens/ListarPID_print.png)
+
+![Teste de metricas](imagens/Metricas_print.png)
