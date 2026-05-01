@@ -45,6 +45,18 @@ Cada nó da árvore armazena:
 
 A árvore é ordenada pelo ID do evento, e após inserções ou remoções o sistema recalcula alturas, verifica o fator de balanceamento e aplica rotações quando necessário.
 
+## Relatório Técnico
+
+O sistema foi desenvolvido em C usando uma Árvore AVL como estrutura principal. Cada nó representa um evento crítico e é organizado pelo ID do evento.
+
+A AVL foi usada porque mantém a árvore balanceada, evitando que ela fique muito desbalanceada conforme novos eventos são inseridos ou removidos.
+
+Após cada inserção ou remoção, o sistema atualiza a altura dos nós, calcula o fator de balanceamento e aplica rotações simples ou duplas quando necessário.
+
+A remoção só é permitida para eventos com status Resolvido. Caso o evento ainda esteja Ativo, o sistema bloqueia a remoção.
+
+As consultas por ID e por intervalo de ID usam diretamente a organização da AVL. Já as consultas por severidade e região percorrem a árvore em ordem, pois esses campos não são usados como chave principal.
+
 ## Métricas
 
 O sistema mostra:
